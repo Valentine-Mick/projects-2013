@@ -1,4 +1,4 @@
-projects
+Projects
 ========
 
 My projects
