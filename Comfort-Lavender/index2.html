@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Show your love with Lavender</title>
+        <meta name="description" content="Find The Freshness">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<link type="text/css" href="https://www.thenicheguys.com/clients/comfort/lavender/friend-selector/jquery.friend.selector-1.2.css" rel="stylesheet">
+	<script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script> 
+	<script src="https://www.thenicheguys.com/clients/comfort/lavender/js/scrollable.js"></script>
+	<style>
+		@font-face {
+				font-family: barmeno;
+				
+				src: url('https://www.thenicheguys.com/clients/comfort/lavender/css/Barmeno.eot');
+				src: url('https://www.thenicheguys.com/clients/comfort/lavender/css/Barmeno.eot?#iefix') format('embedded-opentype'),
+				url('https://www.thenicheguys.com/clients/comfort/lavender/css/Barmeno.woff') format('woff'),
+				url('https://www.thenicheguys.com/clients/comfort/lavender/css/Barmeno.ttf') format('truetype');
+				font-weight: bold;
+			}
+		.container {
+			background-image: url(images/FacebookTabBG.jpg);
+			margin: 0 auto;
+			width: 810px;
+			height: 600px;
+		}
+		
+		#left {
+			position:absolute;
+			left:0px;
+			top:0px;
+			width:50%;
+			height:100%;
+			/*background: rgba(18, 22, 71, 0.4); */
+			/*-moz-box-shadow: 0 0 20px black; */
+			/*-webkit-box-shadow: 0 0 20px black; */ 
+			/*box-shadow: 0 0 20px black; */
+			z-index:5;	
+		}
+		
+		#startplaying{
+			margin-top: 0px;
+			margin-left: 20px;
+			position: absolute;
+			display: none;
+		}
+		
+		#right {
+			position:absolute;
+			right:0px;
+			top:0px;
+			width:50%;
+			height:100%;
+			/*background: rgba(18, 22, 71, 0.4); */
+			/*-moz-box-shadow: 0 0 20px black; */
+			/*-webkit-box-shadow: 0 0 20px black; */ 
+			/*box-shadow: 0 0 20px black; */
+			z-index:5;	
+		}
+		
+		#profile {
+			position: absolute;
+			margin-left: 320px;
+			margin-top: 8px;
+		}
+		
+		#bottle {
+			position: absolute;
+			margin-left: 20px;
+			margin-top: 50px;
+		}
+		
+		#sideTabs{
+			
+		}
+		
+		#covermat{
+			position: absolute;
+			top: 378px;
+			left: 340px;
+			z-index: 4;
+		}
+		
+		#prizes{
+			position: absolute;
+			top: 384px;
+			z-index: 2;
+			left: 319px;
+			width: 325.8px;
+			height: 143.1px;
+			background-image: url('images/prizes.png');
+			background-size: 100% 100%;
+			display: none;
+		}
+		
+		#prizeHit{
+			width: 29px;
+			position: absolute;
+			height: 93px;
+			z-index: 5;
+			cursor: pointer;
+			top: 383px;
+			left: 329px;
+		}
+		
+		#prizes h3{
+			margin-left: 81px;
+			width: 300px;
+			color: #7c5098;
+			margin-bottom: -5px;
+		}
+		
+		.net {
+			background-color: #4d3586;
+			margin: 8px 4px;
+			z-index: 2;
+			width: 203px !important;
+			margin-left: 73px;
+			margin-top: 18px;
+			font-size: 14px !important;
+			position: absolute !important;
+		}
+		
+		.books {
+			background-color: #4d3586;
+			margin: 8px 4px;
+			z-index: 2;
+			width: 203px !important;
+			margin-left: 73px;
+			font-size: 14px !important;
+			position: absolute !important;
+			margin-top: 60px;
+		}
+		
+		.movie {
+			background-color: #4d3586;
+			margin: 8px 4px;
+			z-index: 2;
+			width: 203px !important;
+			margin-left: 73px;
+			font-size: 14px !important;
+			position: absolute !important;
+			margin-top: 60px;
+		}
+		
+		#movie{
+			display: none;
+		}
+		
+		#books{
+			display: none;
+		}
+		
+		#clues{
+			position: absolute;
+			top: 433px;
+			z-index: 1;
+			left: 319px;
+			width: 325.8px;
+			height: 143.1px;
+			background-image: url('images/clues.png');
+			background-size: 100% 100%;
+		}
+		
+		#clueHit{
+			height: 93px;
+			width: 29px;
+			position: absolute;
+			z-index: 5;
+			cursor: pointer;
+			top: 481px;
+			left: 329px;
+		}
+		
+		#clueoftheday{
+			margin-left: 31px;
+			width: 300px;
+			color: rgb(47, 111, 153);
+			text-align: center;
+			margin-bottom: -5px;
+		}
+		#clueoftheday h3{
+			line-height: 10px;
+		}
+		
+		#email {
+			display: none;
+			position: absolute;
+			margin-left: 632px;
+			margin-top: 310px;
+		}
+		
+		#facebook {
+			display: none;
+			position: absolute;
+			margin-left: 420px;
+			margin-top: 310px;
+			cursor: pointer;
+			z-index: 5;
+		}
+		
+		#twitter {
+			display: none;
+			position: absolute;
+			margin-left: 570px;
+			margin-top: 310px;
+			border: none;
+			z-index: 5;
+		}
+		#connect {
+			display: none;
+			position: absolute;
+			margin-left: 447px;
+			margin-top: 430px;
+			z-index: 5;
+		}
+		
+		#leftcopy{
+			display: none;
+			font-size: 17px;
+			margin-left: 365px;
+			margin-top: 450px;
+			width: 400px;
+			text-align: center;
+			position:absolute;
+			margin-bottom:5px;
+			font-weight: bold;
+        	font-family: barmeno;
+        	color: #7c5098;
+        	z-index: 5;
+        	
+			
+		}
+		
+		.footer {
+			padding: 605px 0 0 0;
+		}	
+		.footer p {
+			font-size: 10px;
+		}
+		
+		h4 {
+			margin: 0;
+			padding: 0;
+		}
+		
+		p {
+			margin: 0;
+			padding: 0;		
+		}
+		
+		#linkbuttons{
+			width:80%;
+			position:absolute;
+			bottom:0px;	
+			bottom:5px;
+			left: 25%;
+			padding-left: 3px;
+			right:25%;
+		}
+		#score{
+			position: absolute;
+			z-index: 2;
+			top: 56%;
+			left: 58.5%;
+			font-size: 90px;
+			line-height: 90px;
+			font-weight: bold;
+        	font-family: barmeno;
+        	color: #8a408d;
+        	text-align: center;
+		}
+		#name{
+			position: absolute;
+			margin-left: 680px;
+			margin-top: 130px;
+			font-weight: bold;
+			font-family: barmeno;
+			color: #7c5098;
+			font-size: 20px;
+			width: 100px;
+		}
+		a, img{
+			border: none;
+		}
+		#picture{
+			
+			position: absolute;
+			margin-left: 580px;
+			margin-top: 100px;
+		}
+		#header{
+			font-size: 20px;
+			font-weight: bold;
+		}
+		#comfortLoad{
+			position: absolute;
+			left: -16px;
+			top: 30px;
+		}
+		#replay{
+			display: none;
+			color: white;
+			position: absolute;
+			left: 488px;
+			top: 520px;
+			z-index: 5;
+		}
+		#info{
+			position: absolute;
+			margin-left: 616px;
+			margin-top: 213px;
+			font-weight: bold;
+			font-family: barmeno;
+			color: #7c5098;
+			font-size: 20px;
+			z-index: 5;
+		}
+		
+		#play{
+			display: none;
+			width: 177px;
+			position: absolute;
+			left: 58%;
+			top: 64%;
+			z-index: 6;
+		}
+		
+		#stopplaying{
+			position: absolute;
+			width: 100px;
+			left: 10px;
+			font-size: 12px;
+			top: 560px;
+			z-index: 0;
+			cursor: pointer;
+		}
+		
+		#overlay{
+			position: absolute;
+			z-index: 100;
+			cursor: pointer;
+			display: none;
+		}
+		
+		#moviePopup{
+			position: absolute;
+			z-index: 55;
+			left: 300px;
+			top: 200px;
+			display: none;
+		}
+		#moviePopup img{
+			-webkit-box-shadow: 0px 10px 19px rgba(50, 50, 50, 0.51);
+			-moz-box-shadow:    0px 10px 19px rgba(50, 50, 50, 0.51);
+			box-shadow:         0px 10px 19px rgba(50, 50, 50, 0.51);
+		}
+		#moviePopup a{
+			width: 68px;
+			height: 37px;
+			margin-top: 118px;
+			margin-left: 282px;
+			position: absolute;
+			cursor: pointer;
+		}
+		
+		/*Firefox only*/
+        @-moz-document url-prefix() {
+		    #score{
+				line-height: 0.5;
+			}
+	    }    
+		
+		/*IE 10*/
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	        #score{
+	        	line-height: 0.8;
+	        }
+   		}
+			
+			
+.button, a.button {
+	border: 1px solid #777;
+	border-color: rgba(0,0,0,0.2);
+	border-bottom-color: #333;
+	border-bottom-color: rgba(0,0,0,0.4);
+	color: #fff;
+	-moz-box-shadow: inset 0 0.08em 0 rgba(255,255,255,0.4), inset 0 0 0.1em rgba(255,255,255,0.9);
+	-webkit-box-shadow: inset 0 0.08em 0 rgba(255,255,255,0.4), inset 0 0 0.1em rgba(255,255,255,0.9);
+	box-shadow: inset 0 0.08em 0 rgba(255,255,255,0.4), inset 0 0 0.1em rgba(255,255,255,0.9);
+	cursor: pointer;
+	display: inline-block;
+	font: bold 100%/2.1 "Lucida Grande", Tahoma, sans-serif;
+	padding: 0 .95em;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+	white-space: nowrap;
+	
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	
+	position: relative;
+	
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	border-radius: .3em;
+	
+	width: 100%;
+}
+
+.button:before {
+	content: "";
+	border-right: 0.075em solid rgba(0,0,0,0.1);
+	float: left;
+	font: 120%/1.65 zocial;
+	font-style: normal;
+	font-weight: normal;
+	margin: 0 0.5em 0 0;
+	padding: 0 0.5em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	
+	-moz-box-shadow: 0.075em 0 0 rgba(255,255,255,0.25);
+	-webkit-box-shadow: 0.075em 0 0 rgba(255,255,255,0.25);
+	box-shadow: 0.075em 0 0 rgba(255,255,255,0.25);
+	
+	-moz-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+/* Gradients */
+
+.button {
+	background-image: -moz-linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.05) 49%, rgba(0,0,0,.05) 51%, rgba(0,0,0,.1));
+	background-image: -ms-linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.05) 49%, rgba(0,0,0,.05) 51%, rgba(0,0,0,.1));
+	background-image: -o-linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.05) 49%, rgba(0,0,0,.05) 51%, rgba(0,0,0,.1));
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.1)), color-stop(49%, rgba(255,255,255,.05)), color-stop(51%, rgba(0,0,0,.05)), to(rgba(0,0,0,.1)));
+	background-image: -webkit-linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.05) 49%, rgba(0,0,0,.05) 51%, rgba(0,0,0,.1));
+	background-image: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.05) 49%, rgba(0,0,0,.05) 51%, rgba(0,0,0,.1));
+}
+
+.button:hover, .button:focus {
+	background-image: -moz-linear-gradient(rgba(255,255,255,.15) 49%, rgba(0,0,0,.1) 51%, rgba(0,0,0,.15));
+	background-image: -ms-linear-gradient(rgba(255,255,255,.15) 49%, rgba(0,0,0,.1) 51%, rgba(0,0,0,.15));
+	background-image: -o-linear-gradient(rgba(255,255,255,.15) 49%, rgba(0,0,0,.1) 51%, rgba(0,0,0,.15));
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.15)), color-stop(49%, rgba(255,255,255,.15)), color-stop(51%, rgba(0,0,0,.1)), to(rgba(0,0,0,.15)));
+	background-image: -webkit-linear-gradient(rgba(255,255,255,.15) 49%, rgba(0,0,0,.1) 51%, rgba(0,0,0,.15));
+	background-image: linear-gradient(rgba(255,255,255,.15) 49%, rgba(0,0,0,.1) 51%, rgba(0,0,0,.15));
+}
+
+.button:active {
+	background-image: -moz-linear-gradient(bottom, rgba(255,255,255,.1), rgba(255,255,255,0) 30%, transparent 50%, rgba(0,0,0,.1));
+	background-image: -ms-linear-gradient(bottom, rgba(255,255,255,.1), rgba(255,255,255,0) 30%, transparent 50%, rgba(0,0,0,.1));
+	background-image: -o-linear-gradient(bottom, rgba(255,255,255,.1), rgba(255,255,255,0) 30%, transparent 50%, rgba(0,0,0,.1));
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.1)), color-stop(30%, rgba(255,255,255,0)), color-stop(50%, transparent), to(rgba(0,0,0,.1)));
+	background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,.1), rgba(255,255,255,0) 30%, transparent 50%, rgba(0,0,0,.1));
+	background-image: linear-gradient(bottom, rgba(255,255,255,.1), rgba(255,255,255,0) 30%, transparent 50%, rgba(0,0,0,.1));
+}
+.install {
+	background-color: #4d3586;
+	margin: 8px 4px;
+	z-index: 5;
+}	
+
+
+/*------------ FAQs ----------*/
+#faq{
+	display: none;
+}
+
+.box{
+	background: rgb(255, 255, 255);
+	border: 1px solid;
+	border-color: rgb(214, 215, 218) rgb(213, 216, 221) rgb(199, 200, 202);
+	-webkit-border-radius: 3px;
+	padding: 40px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	margin: 60px 20px 0 20px;
+}
+
+.container_12{
+	margin-left: auto;
+	margin-right: auto;
+	width: 680px;
+}
+
+ul.faq-numbered li {
+	list-style: decimal;
+}
+
+ul.faq-numbered li p {
+	margin: 10px 0 35px 0;
+}
+
+
+/*------------- FAQs ---------- */
+			
+</style>
+
+<!--[if IE 9]>
+<style>
+	#score{
+	     line-height: 0.8;
+}
+</style>
+<![endif]-->
+
+<!--[if IE 8]>
+<style>
+	#score{
+		line-height: 0.8;
+	    font-weight: normal;
+	 }
+	 #name{
+	 	font-weight: normal;
+	 }
+
+</style>
+<![endif]-->
+</head>
+
+<body width="810px" id="scrollable" class="scrollable">
+
+<a id="overlay" onclick="top.location.href='http://www.comfortsoftener.co.za/start.php'">
+	<img src="images/overlay.jpg">	
+</a>
+
+<div class="container">
+	<div id="bottle"> 
+		<div id="score">
+			<img id="comfortLoad" src="https://www.thenicheguys.com/clients/comfort/lavender/images/comfortLoad.gif" alt="">	
+		</div>
+		<img src="images/FBTabBottle.png" alt=""></br>	
+	</div>
+	
+	<div id="sideTabs">
+		
+		<img id="covermat" width="435px" src="images/covermat.png">
+		
+		<div id="prizeHit"></div>
+		<div id="clueHit"></div>
+		
+		<div id="prizes">
+			<h3>Redeem your prizes</h3>
+			<button class="button net" id="netflorist" onclick="window.open('prizes/Voucher_May_comfort.pdf', '_blank');">Netflorist voucher</button>
+			<button class="button books" id="books" onclick="top.location.href = 'prizes/booksVoucher.jpg'">Exclusive Books voucher</button>
+		</div>
+		
+		<div id="clues">
+			<div id="clueoftheday"><h3>Clue of the day:</h3><a href="http://goo.gl/TmRAj">A number neither 6 nor 4,</br> one thing in common,</br> they all have a door.</a></div>
+		</div>
+	
+	</div>	
+	
+	<div id="moviePopup">
+		<a onclick="$('#moviePopup').hide();"></a>
+		<img src="images/movie.jpg">
+	</div>
+			
+<div id="replay">
+				<button class="button install" id="install-comfort-hunt">Play Again</button>
+</div>
+<div id="play">
+				<button class="button install">Continue Playing</button>
+</div>
+<div id="profile">
+	<img src="images/profile.png" alt="">
+</div>
+
+<div id="picture">
+
+</div>
+
+<div id="name">
+
+</div>
+
+<div id="connect">
+	<a href="#"><img width="250px" src="https://www.thenicheguys.com/clients/comfort/lavender/images/FBconnect.png" alt=""></a>
+</div>
+
+<a id="facebook" class="bt-fs-dialog">
+	<img src="images/fbicon.png" alt="">
+</a>
+
+<a id="twitter" href="https://twitter.com/intent/tweet?url=http://bit.ly/18M3o4R&text=Fingers%20crossed!%20Hope%20I%20win%20a%20second%20honeymoon%20with%20Comfort.&hashtags=LavenderBloom" target="_blank" onclick="tweet();">
+	<img src="images/tweeticon.png" alt="">
+</a>
+
+<div id="info">
+	<span id="entries">Prize entries*: </span>
+</div>
+
+<div id="leftcopy">
+        <h4 id="header" >WELL DONE!</h4> 
+        <p id="para" >Keep looking for new clues on our facebook </br> page to find more bottles!</p>
+</div>
+
+<button class="install button" id="stopplaying" onclick="quit();">
+	Stop Playing
+</button>
+
+<div class="footer">
+	<p> *5 bottles collected earns you 1 prize entry</br><a href="https://www.thenicheguys.com/clients/comfort/lavender/app/terms-and-conditions.docx" target="_blank">Terms and Conditions</a> | This game is only available on Desktop and Laptop computers.</p>
+</div>
+
+</div> <!-- Container close -->
+
+<!-------------
+FAQ -start
+-------------->
+<div id="faq" name="faq" class="items">
+<div class="container_12 box">
+		<div class="grid_8">
+			<h3>FAQ</h3>
+				<ul class="faq-numbered">
+				  <li>
+				  	<strong>What is the duration of the competition?</strong>
+				  	<p>The competition runs from the 05 June - 31 July 2013</p>	
+				  </li>
+				  <li>
+				  	<strong>For the best experience, which web browser should I be using?</strong>
+				  	<p>We recommend you update your browser to the latest version. Not only will you have a better experience Showing Your Love with Lavender, doing so keeps you secure online. Google Chrome is our favourite.</p>
+				  </li>
+				  <li>
+				  	<strong>Nothing happens when I click Play, why can't I download the game?</strong>
+				  	<p>If you are trying to play the game at work, please refer to your company internet guidelines as they could have a firewall in place to prevent you from playing.</p>	
+				  </li>
+				  <li>
+				  	<strong>Is this safe for my computer?</strong>
+				  	<p>Yes. The game has been thoroughly tested and does not contain any malicious software that can harm your computer.</p>
+				  </li>
+				  <li>
+				  	<strong>I can't find all five bottles, where are they?</strong>
+				  	<p>Make sure that you have the game installed. The bottles are spread out all over the internet, you should however be able to easily find at least one bottle a day. In a week you could easily have an entry into winning your second honeymoon with all 5 bottles collected.</br>
+Good luck.</p>
+				  </li>
+				  <li>
+				  <strong>Will the game work on my phone or tablet?</strong>
+				  	<p>This game is designed to be played on desktop and laptop computers only.</p>
+				  </li>
+				  <li>
+				  <strong>Do I need Facebook to play the game?</strong>
+				  	<p>Yes. In order for you to save the bottles you collect, you need to connect with Facebook.</p>
+				  </li>
+				  <li>
+				  <strong>How do I stop playing?</strong>
+				  	<p><a onclick="quit();">Click here to stop playing.</a></p>
+				  </li>
+				  <li>
+				  <strong>Where do I get my vouchers from?</strong>
+				  	<p>Once you have collected your 3rd and 5th bottle, your vouchers can be found by clicking the 'Prizes' tab above.<br />NB: Vouchers cannot be redeemed via Tweeting for a bottle - only the 3rd and 5th bottles found via browsing the web will reward you.</p>
+				  </li>
+				  <li>
+				  <strong>Where can I find the clues?</strong>
+				  	<p>The clues can be found on the Comfort Zone South Africa Facebook page <a href="http://www.facebook.com/comfortzonesouthafrica">www.facebook.com/ComfortZoneSouthAfrica</a> or you can find your daily clue by clicking the 'Clues' tab above.</p>
+				  </li>
+				</ul>
+		</div>
+</div>
+</div>
+<!-------------
+FAQ -end
+-------------->
+
+<script type="text/javascript" src="https://www.thenicheguys.com/clients/comfort/lavender/friend-selector/jquery.friend.selector-1.2.js"></script> 
+<script type="text/javascript" src="https://www.thenicheguys.com/clients/comfort/lavender/js/main2.js"></script>
+<script>
+	setInterval(function(){$('#faq').slideDown(2000, function(){ $(".scrollable").scrollable();});}, 5000);
+
+
+</script>
+</body>
+</html>

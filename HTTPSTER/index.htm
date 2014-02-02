@@ -1,0 +1,1062 @@
+<!---
+
+ __        __  __     ______   ______   ______   ______     ______   ______     ______        __    
+/\ \      /\ \_\ \   /\__  _\ /\__  _\ /\  == \ /\  ___\   /\__  _\ /\  ___\   /\  == \      /\ \   
+\ \ \     \ \  __ \  \/_/\ \/ \/_/\ \/ \ \  _-/ \ \___  \  \/_/\ \/ \ \  __\   \ \  __<      \ \ \  
+ \ \_\     \ \_\ \_\    \ \_\    \ \_\  \ \_\    \/\_____\    \ \_\  \ \_____\  \ \_\ \_\     \ \_\ 
+  \/_/      \/_/\/_/     \/_/     \/_/   \/_/     \/_____/     \/_/   \/_____/   \/_/ /_/      \/_/ 
+                                                                                                    
+       __   __   ______     __         ______     __   __     ______   __     __   __     ______    
+      /\ \ / /  /\  __ \   /\ \       /\  ___\   /\ "-.\ \   /\__  _\ /\ \   /\ "-.\ \   /\  ___\   
+      \ \ \'/   \ \  __ \  \ \ \____  \ \  __\   \ \ \-.  \  \/_/\ \/ \ \ \  \ \ \-.  \  \ \  __\   
+       \ \__|    \ \_\ \_\  \ \_____\  \ \_____\  \ \_\\"\_\    \ \_\  \ \_\  \ \_\\"\_\  \ \_____\ 
+        \/_/      \/_/\/_/   \/_____/   \/_____/   \/_/ \/_/     \/_/   \/_/   \/_/ \/_/   \/_____/ 
+--->                                                                                                    
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<!-- important device scaling -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>H††PSTER</title>
+		<meta name="description" content="Front-end Developer Portfolio of Valentine Mick Celliers" />
+		<meta name="keywords" content="front-end, developer, portfolio, httpster, michael celliers, designer, South Africa, valentine, mick, celliers, website" />
+		<meta name="author" content="Httpster" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		
+		<script src="js/jquery.queryloader2.js" type="text/javascript"></script>
+        <script>        	
+        	window.addEventListener('DOMContentLoaded', function() {
+			$("body").queryLoader2({
+	        barColor: "#fff",
+	        backgroundColor: "#34495e",
+	        percentage: true,
+	        barHeight: 1,
+	        completeAnimation: "grow",
+	        minimumTime: 100
+		    });
+		});       
+        </script>
+		
+		<script src="js/modernizr.custom.js"></script>	
+		<script src="js/modernizr.custom2.js"></script>		
+		
+</head>
+<body>
+	
+	<div class="container">
+			<!--- navigation --->
+			<ul id="nav-menu" class="nav-menu-main">
+				<li class="nav-trigger">
+					<a class="nav-icon nav-icon-menu"><span>Menu</span></a>
+					<nav class="nav-menu-wrapper">
+						<div class="nav-scroller">
+							<ul class="nav-menu">
+								<li>
+									<a id = "slitlink" class="nav-icon nav-icon-work" href="#">Work</a>
+									<ul class="nav-submenu">
+										<li><a id = "skillslink" class="nav-icon nav-icon-list" href="#">Skills</a></li>
+										<li><a id="timelinelink" class="nav-icon nav-icon-timeline" href="#">Timeline</a></li>
+									</ul>
+								</li>
+								<li><a id="bigHalfCirclelink" class="nav-icon nav-icon-projects" href="#">Projects</a>
+									<ul class="nav-submenu">
+										<li><a id="brandslink" class="nav-icon nav-icon-brands" href="#">Brands</a></li>
+									</ul>
+								</li>
+								<li>
+									<a id="set-1link" class="nav-icon nav-icon-contact" href="#">Contact</a>
+									
+								</li>
+							</ul>
+						</div><!-- /nav-scroller -->
+					</nav>
+				</li>
+				<li><a id="headlink" class="httpster-icon httpster-icon-logo" href="#"><span>H††pster</span></a></li>
+				<li><a id="headlink" class="httpster-icon httpster-icon-home" href="#"><span>Home</span></a></li>
+				<li><a id="set-1link" class="httpster-icon httpster-icon-drop" href="#"><span>Contact</span></a></li>
+			</ul><!--- navigation close --->
+			
+			<div class="header" id="head">
+			
+				<div id="typer">foo</div>
+
+		       
+		        <script src='js/jquery.typer.js'></script>
+		        <script>
+		            var win = $(window),
+		                foo = $('#typer');
+		
+		            foo.typer(['I am a <b>front end</b> developer!', 'I am looking for a job <span>or</span> beer donations.' , 'Hell... Maybe a job working <b>with</b> beer?' , 'That would be something.' , 'Are you still reading this?' , 'Get on with it!' ]);
+		
+		            // window resize...
+		            win.resize(function(){
+		                var fontSize = Math.max(Math.min(win.width() / (1 * 18), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+		
+		                foo.css({
+		                    fontSize: fontSize * .8 + 'px'
+		                });
+		            }).resize();
+		        </script><!--- typer js --->
+				
+				<div id="gifs">
+					<script type="text/javascript">				
+						function random_imglink(){
+						var myimages=new Array()
+							//specify random header images below:
+							myimages[1]="images/headers/image1.gif"
+							myimages[2]="images/headers/image2.gif"
+							myimages[3]="images/headers/image3.gif"
+							myimages[4]="images/headers/image4.gif"
+							myimages[5]="images/headers/image5.gif"
+							myimages[6]="images/headers/image6.gif"
+							myimages[7]="images/headers/image7.gif"
+							myimages[8]="images/headers/image8.gif"
+							myimages[9]="images/headers/image9.gif"
+							myimages[10]="images/headers/image10.gif"
+							myimages[11]="images/headers/image11.gif"
+							
+							var ry=Math.floor(Math.random()*myimages.length)
+							if (ry==0)
+							ry=1
+							document.write('<img src="'+myimages[ry]+'" border=0>')
+							}
+							random_imglink()
+					</script>
+				</div>
+				
+				<div id="headercredit">
+					<p> <i>Animated gifs by <a href="http://patakk.tumblr.com/" target="_blank">Paolo Ceric</a> </i></p>
+				</div>	
+			</div><!--- header --->
+			
+			<!--- Slit ---->
+			
+			<svg id="slit" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path id="slitPath2" d="M50 100 C49 80 47 0 40 0 L47 0 Z" />
+				<path id="slitPath3" d="M50 100 C51 80 53 0 60 0 L53 0 Z" />
+				<path id="slitPath1" d="M47 0 L50 100 L53 0 Z" />
+			</svg>
+			
+			<div class="overlay"></div>
+			
+			<div id="content">
+			
+				<!---- skills ---->
+			
+				<div class="component">
+				
+					<ul class="grid">
+					<h3> My name is Micky Valen†ine.<br><span> I'm a developer specialising in UI & front-end development (& the odd video production).</span> </h3>
+						
+						<li class="ot-letter-left">
+							<span data-letter="&#xe606">
+								<div class="httpster-grid-icon httpster-grid-icon-web">
+							</span>			
+							<text> <b>Web</b><br> Development </text>
+						</li>		
+						
+						<li class="ot-letter-top">
+							<span data-letter="&#xe607">
+								<div class="httpster-grid-icon httpster-grid-icon-user">
+							</span>
+							<text> <b>User</b><br> Interface </text>
+						</li>
+						
+						<li class="ot-letter-bottom">
+							<span data-letter="&#xe604">
+								<div class="httpster-grid-icon httpster-grid-icon-mobile">
+							</span>
+							<text> <b>Mobile</b><br> Applications </text>
+						</li>
+						
+						<li class="ot-letter-right">
+							<span data-letter="&#xe600">
+								<div class="httpster-grid-icon httpster-grid-icon-video">
+							</span>
+							<text> <b>Video</b><br> Production </text>
+						</li>
+				
+					</ul>
+				</div>
+				
+		<div class="timeline_skills">
+				
+<!---------- percent bars ------------->
+			<div class="barcontainer" id="skills">
+			
+				<h1> I'm a front-end developer, aspiring to apply my skills & trade to the worlds biggest brands & the greatest challenges.</h1>
+				
+				<h2> Skills: </h2>
+				<div class="bar">
+				    <div class="level90 ninety">
+							90%
+					</div>
+				</div>
+				<p>HTML5</p>
+				
+				<div class="bar">
+				    <div class="level80 eighty">
+							80%
+					</div>
+				</div>
+				<p>CSS3</p>
+				
+				<div class="bar">
+				    <div class="level70 seventy">
+							70%
+					</div>
+				</div>
+				<p>JavaScript</p>
+				
+				<div class="bar">
+				    <div class="level60 sixty">
+							60%
+					</div>
+				</div>
+				<p>PHP</p>
+				
+				<div class="bar">
+				    <div class="level60 sixty">
+							60%
+					</div>
+				</div>
+				<p>MySQL</p>
+				
+				<div class="bar">
+				    <div class="level90 ninety">
+							90%
+					</div>
+				</div>
+				<p>FIFA14</p>
+			</div>	
+				
+<!---------- percent bars end ---------->
+
+<div class="timelinecontainer" id="timeline">
+					
+			<div class="main_timeline">
+				<ul class="cbp_tmtimeline">
+					<li>
+						<time class="cbp_tmtime" datetime="2008-04"><span> April</span> <span>2008</span></time>
+						<div class="cbp_tmicon cbp_tmicon-screen"></div>
+						<div class="cbp_tmlabel">
+							<h2>First Time Opening Photoshop</h2>
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2009-01"><span>January</span> <span>2009</span></time>
+						<div class="cbp_tmicon cbp_tmicon-html"></div>
+						<div class="cbp_tmlabel">
+							<h2>First Lesson In HTML</h2>
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2010-02"><span>February</span> <span>2010</span></time>
+						<div class="cbp_tmicon cbp_tmicon-lib"></div>
+						<div class="cbp_tmlabel">
+							<h2>I'm accepted & start as Vega Student!</h2>
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2013-06"><span>June</span> <span>2010</span></time>
+						<div class="cbp_tmicon cbp_tmicon-cam"></div>
+						<div class="cbp_tmlabel">
+							<h2>Official Cameraman for <a href="http://www.ap.org" target="_blank">Associated Press</a> during 2010 FIFA World Cup</h2>
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2013-04"><span>April</span> <span>2011</span></time>
+						<div class="cbp_tmicon cbp_tmicon-dolla"></div>
+						<div class="cbp_tmlabel">
+							<h2>First commercial development & design</h2>
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2013-03"><span>March</span> <span>2012</span></time>
+						<div class="cbp_tmicon cbp_tmicon-pen"></div>
+						<div class="cbp_tmlabel">
+							<h2>Began working for <a href="http://www.ogilvy.co.za" target="_blank">Ogilvy & Mather</a>, & <a href="http://www.thenicheguys.com" target="_blank">Niche Digital </a></h2>
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2013-12"><span>December</span> <span>2013</span></time>
+						<div class="cbp_tmicon cbp_tmicon-plane"></div>
+						<div class="cbp_tmlabel">
+							<h2>Resigned from Niche & Ogilvy, moved to Cape Town & started working for {<div><a id="set-1link" href="#">contact me</a></div>} </h2>
+						</div>
+					</li>
+				</ul>
+			</div>		
+	</div>
+		
+		</div><!--- timeline_skills --->
+		
+		
+			<svg id="bigHalfCircle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path d="M0 100 C40 0 60 0 100 100 Z"/>
+			</svg>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="workcontainerbg">
+		
+			<div class="workcontainer">	
+			<div class="recentprojects"><h2>My Recent Projec†s: </h2> </div>
+			<div id="bl-main" class="bl-main">
+			
+				<section id="bl-work-section">
+					<div class="bl-box">
+						<div class="bl-icon-defy"><img src="images/app-btn.png"><h2>Defy</h2></div>
+					</div>
+					<div class="bl-content">
+						<h2>Defy</h2>
+						<p>Defy introduced a new technology, Aquafusion, & are in search for aided communication to introduce it to their target market.</p>
+						<ul id="bl-work-items">
+							<li data-panel="defy-app"><a href="#"><img src="images/ipadvector.jpg" />Defy Aquafusion <br>[iPad App]</a></li>
+						</ul>						
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				
+				<section id="bl-work-section">
+					<div class="bl-box">
+						<div class="bl-icon-comfort"><img src="images/web-btn.png"><h2>Comfort</h2></div>
+					</div>
+					<div class="bl-content">
+						<h2>Comfort Fabric Softener</h2>
+						<p>One of my first full-time brands I was entrusted with was Comfort fabric Softener & it's introduction to a South African market.</p>
+						<ul id="bl-work-items">
+							<li data-panel="comfort-app"><a href="#"><img src="images/laptop.jpg" />Share your love with lavender <br>[Browser App]</a></li>
+							<li data-panel="comfort-site"><a href="#"><img src="images/laptop.jpg" />Website Redesign & Development<br>[Website]</a></li>
+							<li data-panel="comfort-fb"><a href="#"><img src="images/laptop.jpg" />Social Management<br>[Facebook]</a></li>
+							
+						</ul>
+						
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>				
+				
+				<section id="bl-work-section">
+					<div class="bl-box">
+						<div class="bl-icon-domestos"><img src="images/web-btn.png"><h2>Domestos</h2></div>
+					</div>
+					<div class="bl-content">
+						<h2>Domestos</h2>
+						<p>Domestos is a household cleaning range which contains bleach & is manufactured by Unilever. I have been co-managing their digital media for the last 16months.</p>
+						<ul id="bl-work-items">
+							<!--<li data-panel="domestos-ctbf"><a href="#"><img src="images/laptop.jpg" />Cleaner Toilets Brighter Future<br>[Campaign]</a></li>-->
+							<li data-panel="domestos-site"><a href="#"><img src="images/laptop.jpg" />Website Redesign & Development<br>[Website]</a></li>
+							<li data-panel="domestos-fb"><a href="#"><img src="images/laptop.jpg" />Social Management<br>[Facebook / Twitter]</a></li>
+							
+						</ul>
+						
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				
+				<section id="bl-work-section">
+					<div class="bl-box">
+						<div class="bl-icon-domestos"><img src="images/web-btn.png"><h2>Boxer</h2></div>
+					</div>
+					<div class="bl-content">
+						<h2>Boxer</h2>
+						<p>Boxer is a lower LSM market with different challenges involved to successfully land their digital branding to their desired market.</p>
+						<ul id="bl-work-items">
+							<li data-panel="boxer-site"><a href="#"><img src="images/laptop.jpg" />Website Development<br>[Website]</a></li>
+							<li data-panel="boxer-fb"><a href="#"><img src="images/laptop.jpg" />Social Management<br>[Facebook]</a></li>
+							
+						</ul>
+						
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				
+				<section id="bl-work-section">
+					<div class="bl-box">
+						<div class="bl-icon-boxer"><img src="images/web-btn.png"><h2>GoDurban</h2></div>
+					</div>
+					<div class="bl-content">
+						<h2>GoDurban</h2>
+						<p>GoDurban is Durban's new government transport system, currently rolling out with expected completion in 2017.</p>
+						<ul id="bl-work-items">
+							<li data-panel="godurban-site"><a href="#"><img src="images/laptop.jpg" />Website Redesign & Development<br>[Website]</a></li>
+						</ul>
+						
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				
+				<section id="bl-work-section">
+					<div class="bl-box">
+						<div class="bl-icon-boxer"><img src="images/web-btn.png"><h2>Muvo</h2></div>
+					</div>
+					<div class="bl-content">
+						<h2>Muvo</h2>
+						<p>Muvo is the card system to accompany Durban's new transport system & GoDurban.</p>
+						<ul id="bl-work-items">
+							<li data-panel="muvo-site"><a href="#"><img src="images/laptop.jpg" />Website Redesign & Development<br>[Website]</a></li>
+						</ul>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				
+				
+				
+				
+				<!-- Panel items for the works -->
+				<div class="bl-panel-items" id="bl-panel-work-items">
+					<div data-panel="domestos-site">
+						<div>
+							
+							
+							<div class="web-showcase-container">
+			
+			<section>
+			
+				<div class="ao-item">
+					<div class="ao-details">
+						<h2>Domestos Website</h2>
+						<p><b>The Brief:</b> For 2014, Domestos South Africa, being a market-leading bleach detergent was in desperate need for a modern & useful website to aid the brand by creating more of an informational connection with their users by showing them the cleaning diversities in a way that they could adopt into regular cleaning practice.</p>
+						<p><a href="http://www.domestos.co.za/">Weblink &rarr;</a></p>
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/DomestosHome.jpg" alt="image01" />
+						<div class="ao-annotations">
+							<span>Modern web standards</span>
+							<span>Fully responsive</span>
+							<span>Home Slider Links</span>
+							<span>Current campaign</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="ao-item ao-item-left">
+					<div class="ao-details">
+						<h2>product information</h2>
+						<p>The large imagery & iconography allowed for easy comprehension & product recognition.</p>
+						
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/DomestosProducts.jpg" alt="image02" />
+						<div class="ao-annotations">
+							<span>fast page load</span>
+							<span>Product info</span>
+							<span>Large Product Imagery</span>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="ao-item">
+					<div class="ao-details">
+						<h2>40 tips</h2>
+						<p>Easy & useful tips of hygiene using domestos, helping aid the multi-cleaning uses message of the brand.</p>
+						
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/DomestosHygiene.jpg" alt="image01" />
+						<div class="ao-annotations">
+							<span>seamless web response</span>
+							<span>Home tips</span>
+							<span>Bathroom tips</span>
+							<span>Kitchen tips</span>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="ao-item ao-item-left">
+					<div class="ao-details">
+						<h2>Contact Form</h2>
+						<p>Clear & simple contact with the brand.</p>
+						
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/DomestosContact.jpg" alt="image02" />
+						<div class="ao-annotations">
+							
+							<span>Consumer details</span>
+							<span>Consumer comments/message</span>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="ao-item">
+					<div class="ao-details">
+						<h2>Mobile friendly</h2>
+						<p>It was a major priority to ensure comfortable mobile responsiveness combined with intelligent usability.</p>
+						
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/DomestosMobile.jpg" alt="image01" />
+						<div class="ao-annotations">
+							
+							<span>UI Conscious</span>
+							
+							<span>bottom navigation</span>
+							<span>Pages facilitate all information</span>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			
+        </div>
+
+							
+							
+						</div>
+					</div>
+					<div data-panel="boxer-site">
+						<div>
+							
+							
+							<div class="web-showcase-container">
+			
+			<section>
+			
+				<div class="ao-item">
+					<div class="ao-details">
+						<h2>Boxer Website</h2>
+						<p><b>The Brief:</b> Boxer Superstores is the chief retailer for a majority of South Africans, who are increasingly become more web conscious and mobile dependent; and whilst Boxer boasts some the most trafficked goods, and facilitating specials, regular web development, branding and maintenance is important.</p>
+						<p><a href="http://www.boxer.co.za/">Weblink &rarr;</a></p>
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/BoxerHome.jpg" alt="image01" />
+						<div class="ao-annotations">
+							<span>Modern web standards</span>
+							<span>Fully responsive</span>
+							<span>Home Slider Links</span>
+							<span>Regular fast links</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="ao-item ao-item-left">
+					<div class="ao-details">
+						<h2>Store Locator feature</h2>
+						<p>Many Boxer Stores are in impoverished areas and locations may become difficult to journey to. Therefore, a new feature for consumers (and anyone else who may find it useful) of Store Locations was recently introduced.</p>
+						
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/BoxerStores.jpg" alt="image02" />
+						<div class="ao-annotations">
+							<span>Current location relativity</span>
+							<span>Pin locations</span>
+							<span>Store name (city) search bar</span>
+						</div>
+					</div>
+				</div>
+	
+				
+				<div class="ao-item">
+					<div class="ao-details">
+						<h2>Mobile friendly</h2>
+						<p>It was a major priority to ensure comfortable mobile responsiveness combined with intelligent usability.</p>
+						
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/BoxerMobile.jpg" alt="image01" />
+						<div class="ao-annotations">
+							
+							<span>UI Conscious</span>
+							
+							<span>large button navigation</span>
+							<span>Pages facilitate all information</span>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			
+        </div>
+
+							
+							
+						</div>
+					</div>
+					<div data-panel="comfort-site">
+						<div>
+							
+							
+							<div class="web-showcase-container">
+			
+			<section>
+			
+				<div class="ao-item">
+					<div class="ao-details">
+						<h2>Comfort Website</h2>
+						<p><b>The Brief:</b> A year past Comfort's South African launch and successful market breakthrough & <a href="https://www.facebook.com/ComfortZoneSouthAfrica" target="_blank" > facebook </a> presence, the brand wanted to present a more thorough and complete site to serve aid to the product's success.</p>
+						<p><a href="http://www.comfort.co.za/">Weblink &rarr;</a></p>
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/ComfortHome.jpg" alt="image01" />
+						<div class="ao-annotations">
+							<span>Modern web standards</span>
+							<span>Fully responsive</span>
+							<span>Elegant adoption of  brand ID</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="ao-item ao-item-left">
+					<div class="ao-details">
+						<h2>Comfort Product Range</h2>
+						<p>The brand found it important to present each fragrance in a different and unique light, each best suited for different aromas and preferences. </p>						
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/ComfortRange.jpg" alt="image02" />
+						<div class="ao-annotations">
+							<span>Anno 1</span>
+							<span>Anno 2</span>
+							<span>Anno 3</span>
+						</div>
+					</div>
+				</div>
+	
+				
+				<div class="ao-item">
+					<div class="ao-details">
+						<h2>Products</h2>
+						<p>Further information & enchanting tale accompanied each fragrance.</p>
+						
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/ComfortProducts.jpg" alt="image01" />
+						<div class="ao-annotations">
+							
+							<span>UI Conscious</span>							
+							<span>large button navigation</span>
+							<span>Pages facilitate all information</span>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			
+        </div>
+
+							
+							
+						</div>
+					</div>
+					<div data-panel="comfort-app">
+						<div>
+							
+							
+							<div class="web-showcase-container">
+			
+			<section>
+			
+				<div class="ao-item">
+					<div class="ao-details">
+						<h2>Comfort Browser Application</h2>
+						<p><b>The Brief:</b> An interactive campaign & cross-browser plugin that would hide virtual bottles of Comfort across the internet & on select websites. Following the clues, collecting bottles & getting social all helped the mums gain entry to winning a second honeymoon.</p>
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/ComfortApp1.jpg" alt="image01" />
+						<div class="ao-annotations">
+							<span>Modern web standards</span>
+							<span>Fully responsive</span>
+							<span>Home Slider Links</span>
+							<span>Regular fast links</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="ao-item ao-item-left">
+					<div class="ao-details">
+						<h2>Virtual Bottles</h2>
+						<p>Re-themed web addresses & virtual bottle pop-ups on specially targeted websites helped longevity & and landings of multiple brand impressions with our mums.</p>
+						
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/ComfortApp2.jpg" alt="image02" />
+						<div class="ao-annotations">
+							<span>Current location relativity</span>
+							<span>Pin locations</span>
+							<span>Store name (city) search bar</span>
+						</div>
+					</div>
+				</div>
+	
+				
+				<div class="ao-item">
+					<div class="ao-details">
+						<h2>Progress Monitor</h2>
+						<p>A personalised profile, with all prizes, clues & user progress was available on the Comfort Facebook Page.</p>
+						
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/ComfortApp3.jpg" alt="image01" />
+						<div class="ao-annotations">
+							
+							<span>UI Conscious</span>
+							
+							<span>large button navigation</span>
+							<span>Pages facilitate all information</span>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			
+        </div>
+
+							
+							
+						</div>
+					</div>	
+					<div data-panel="godurban-site">
+						<div>
+							
+							
+							<div class="web-showcase-container">
+			
+			<section>
+			
+				<div class="ao-item">
+					<div class="ao-details">
+						<h2>GoDurban Website</h2>
+						<p><b>The Brief:</b> GoDurban was recently announced to be Durban's new government approved transport system similar to those of Cape Town's & Jo'burg's. This is a responsive website to showcase the vision & developments of the projects 5-year unfolding.</p>
+						<p><a href="http://www.godurban.co.za/">Weblink &rarr;</a></p>
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/GodurbanHome.jpg" alt="image01" />
+						<div class="ao-annotations">
+							<span>Modern web standards</span>
+							<span>Fully responsive</span>
+							<span>Home Slider Links</span>
+							<span>Regular fast links</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="ao-item ao-item-left">
+					<div class="ao-details">
+						<h2>Gallery</h2>
+						<p>Largely in the beginning stages of development, regular gallery updates to reveal the progress in a visual representation was a certain credit.</p>
+						
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/GodurbanGallery.jpg" alt="image02" />
+						<div class="ao-annotations">
+							<span>Current location relativity</span>
+							<span>Pin locations</span>
+							<span>Store name (city) search bar</span>
+						</div>
+					</div>
+				</div>
+	
+				
+				<div class="ao-item">
+					<div class="ao-details">
+						<h2>Mobile friendly</h2>
+						<p>It was a major priority to ensure comfortable mobile responsiveness combined with intelligent usability.</p>
+						
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/GodurbanMobile.jpg" alt="image01" />
+						<div class="ao-annotations">
+							
+							<span>UI Conscious</span>
+							
+							<span>large button navigation</span>
+							<span>Pages facilitate all information</span>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			
+        </div>
+
+							
+							
+						</div>
+					</div>
+					<div data-panel="muvo-site">
+						<div>
+							
+							
+							<div class="web-showcase-container">
+			
+			<section>
+			
+				<div class="ao-item">
+					<div class="ao-details">
+						<h2>Muvo Website</h2>
+						<p><b>The Brief:</b> Muvo is the card system for the Durban transport renovations accompanying GoDuban.</p>
+						<p><a href="http://www.muvo.co.za/">Weblink &rarr;</a></p>
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/MuvoHome.jpg" alt="image01" />
+						<div class="ao-annotations">
+							<span>Modern web standards</span>
+							<span>Fully responsive</span>
+							<span>Home Slider Links</span>
+							<span>Regular fast links</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="ao-item ao-item-left">
+					<div class="ao-details">
+						<h2>Bus Routes</h2>
+						<p>Diverse and easy to read bus routes are available to the public.</p>
+						
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/MuvoRoutes.jpg" alt="image02" />
+						<div class="ao-annotations">
+							<span>Current location relativity</span>
+							<span>Pin locations</span>
+							<span>Store name (city) search bar</span>
+						</div>
+					</div>
+				</div>
+	
+				
+				<div class="ao-item">
+					<div class="ao-details">
+						<h2>Mobile friendly</h2>
+						<p>It was a major priority to ensure comfortable mobile responsiveness combined with intelligent usability.</p>
+						
+					</div>
+					<div class="ao-preview">
+						<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+						<img src="images/MuvoMobile.jpg" alt="image01" />
+						<div class="ao-annotations">
+							
+							<span>UI Conscious</span>
+							
+							<span>large button navigation</span>
+							<span>Pages facilitate all information</span>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			
+        </div>
+
+							
+							
+						</div>
+					</div>								
+					<div data-panel="domestos-ctbf">
+						<div>
+							<div class="fbimages"><img src="images/2.jpg" /></div>
+							<h3 style="color: #5f6f81; font-size: 1.5em;">Cleaner Toilets Brighter Future</h3>
+							<p style="color: #c0c0c0">Prepare a content strategy & project reveal of the Domestos campaign. Then to animate & edit an informative and interesting case study, show-casing the successful innitiative of Domestos's 'Cleaner Toilets, Brighter Future' campaign.</p>
+						</div>
+					</div>
+					<div data-panel="defy-app">
+				<div>
+						<div class="appcontainer">	
+							<div class="appmain">
+								<div id="ac-wrapper" class="ac-wrapper">
+									<h2>Defy Aquafusion <span>Development &amp; UI Design</span></h2>
+									<div class="ac-device">
+										<a href="#"><img src="images/screen1.jpg"/></a>
+										<h3 class="ac-title">Aquafusion Home Page</h3>
+										 <div>
+										 <nav>
+											<span>&lt;</span>
+											<span>&gt;</span>
+										</nav>
+										 </div> 
+									</div>
+									<div class="ac-grid">
+										<a href="#"><img src="images/screen1.jpg"/><span>Aquafusion Home Page</span></a>
+										<a href="#"><img src="images/screen2.jpg"/><span>3 Question Quiz</span></a>
+										<a href="#"><img src="images/screen3.jpg"/><span>Instant Prompting</span></a>
+										<a href="#"><img src="images/screen4.jpg"/><span>Correct Answers Progressed</span></a>
+										<a href="#"><img src="images/screen5.jpg"/><span>Incorrect Answers Would Retry</span></a>
+										<a href="#"><img src="images/screen6.jpg"/><span>Entry Form For Prize</span></a>
+										<a href="#"><img src="images/screen7.jpg"/><span>Promotional Video</span></a>
+										<a href="#"><img src="images/screen8.jpg"/><span>Admin Settings</span></a>
+									</div>
+								</div>	
+								<p>Click the screen to toggle between single and grid view.</p>			
+							</div>
+						</div><!-- /container -->
+						
+							<div class="defy-screens">
+								<img src="images/Defy-Screens.jpg">
+							</div> 
+							
+							<p style="padding-bottom: 50px"><b>The Brief:</b>Design & fully develop a user-product survey with practical application ease.</p>
+							
+				</div>
+			</div>
+					<div data-panel="comfort-fb">
+						<div>
+							<div class="fbimages"><img src="images/ComfortFB.jpg" /></div>
+							<h3 style="color: #5f6f81; font-size: 1.5em;"><b>Comfort Softner</b></h3>
+							<p style="#c0c0c0">The Comfort Zone is the home for South African mums to unite & share motherly experiences & advice, while Comfort facilitated / promoted conversation & entertainment to land the Comfort branding</p>
+						</div>
+					</div>					
+					<div data-panel="domestos-fb">
+						<div>
+							<div class="fbimages"><img src="images/DomestosFB.jpg" /></div>
+							<h3 style="color: #5f6f81; font-size: 1.5em;"><b>Domestos SA</b></h3>
+							<p style="color: #c0c0c0">Domestos Facebook page looked to deliver hygiene and global news of positivity, while promoting the Domestos Brand & aiding the current 'Cleaner Toilets Brighter Future' campaign.</p>
+						</div>
+					</div>					
+					<div data-panel="boxer-fb">
+						<div>
+							<div class="fbimages"><img src="images/BoxerFB.jpg" /></div>
+							<h3 style="color: #5f6f81; font-size: 1.5em;"><b>Boxer Superstores</b></h3>
+							<p style="color: #c0c0c0">Boxer is home to discounted goods, fun moments & local gossip. Large Facebook content strategy was simply promotional goods and weekly / monthly specials.</p>
+						</div>
+					</div>
+					<nav>
+						<span style="color: #c0c0c0" class="bl-next-work" >&gt; Next Project</span>
+						<span class="bl-icon bl-icon-close2"></span>
+					</nav>
+				</div>				
+			</div>
+		</div><!-- /container -->
+		
+		</div><!--- /workcontainerbg --->
+		
+		<div class="brandscontainer" id="brands">
+			
+			<h3> brands I've worked wi†h: </h3>
+							
+			<ul class="brands-comfort">
+				<li><a href="#1"><img src="images/brands/sibaya.jpg" /><div></div></a></li>
+				<li><a href="#2"><img src="images/brands/ap.jpg" /><div></div></a></li>
+				<li><a href="#3"><img src="images/brands/sharks.jpg" /><div></div></a></li>
+				<li><a href="#4"><img src="images/brands/comfort.jpg" /><div></div></a></li>
+				
+				<li><a href="#5"><img src="images/brands/domestos.jpg" /><div></div></a></li>
+				<li><a href="#6"><img src="images/brands/unilever.jpg" /><div></div></a></li>
+				<li><a href="#7"><img src="images/brands/swg.jpg" /><div></div></a></li>
+				<li><a href="#8"><img src="images/brands/boxer.jpg" /><div></div></a></li>
+				
+				<li><a href="#9"><img src="images/brands/simba.jpg" /><div></div></a></li>
+				<li><a href="#10"><img src="images/brands/ogilvy.jpg" /><div></div></a></li>
+				<li><a href="#11"><img src="images/brands/renew.jpg" /><div></div></a></li>
+				<li><a href="#12"><img src="images/brands/voda.jpg" /><div></div></a></li>
+				
+				<li><a href="#13"><img src="images/brands/defy.jpg" /><div></div></a></li>
+				<li><a href="#14"><img src="images/brands/inecto.jpg" /><div></div></a></li>
+				<li><a href="#15"><img src="images/brands/godurban.jpg" /><div></div></a></li>
+				<li><a href="#16"><img src="images/brands/muvo.jpg" /><div></div></a></li>
+				
+				<li><a href="#17"><img src="images/brands/sunlight.jpg" /><div></div></a></li>
+				<li><a href="#18"><img src="images/brands/handyandy.jpg" /><div></div></a></li>
+				<li><a href="#19"><img src="images/brands/lifebuoy.jpg" /><div></div></a></li>
+				<li><a href="#20"><img src="images/brands/sab.jpg" /><div></div></a></li>
+				
+				<li><a href="#21"><img src="images/brands/niche.jpg" /><div></div></a></li>
+				<li><a href="#22"><img src="images/brands/viva.jpg" /><div></div></a></li>
+				
+			</ul>
+			
+		</div>
+			
+		</div><!--- content ---> 
+		
+		<div class="clearfix"></div>
+		
+		<svg id="bigHalfCircle2" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none" style="border:none;">
+				<path d="M0 0 L50 100 L100 0 Z"/>
+			</svg>
+			
+			<section id="set-1">
+			
+			<h2> Contac† me?</h2>
+			<p> I'm always on my computer - I'll have to get back to you... </p>
+				<div class="contact-icon-wrap contact-icon-effect-1 contact-icon-effect-1a">
+					<a href="mailto:mike@httpster.co.za?Subject=Hello%20Mike" target="_top" class="contact-icon contact-icon-mail">E-MAIL</a>
+					<a href="http://za.linkedin.com/in/michaelcelliers" target="_blank" class="contact-icon contact-icon-linkedin">LINKEDIN</a>
+					<a href="https://www.facebook.com/valentine.mick" target="_blank" class="contact-icon contact-icon-fb">FACEBOOK</a>
+					<a href="https://twitter.com/ValentineMick" target="_blank" class="contact-icon contact-icon-twitter">TWITTER</a>
+				</div>
+			</section>
+			
+	</div><!--- container --->
+	
+	<script >
+		// rather than "body", you will want to tweak this selector
+$('.bl-box , .bl-icon-close').click(function() {
+    $(".overlay").toggle(); // show/hide the overlay
+    
+});
+
+/*
+-----click outside area // close ------
+
+$(document).mouseup(function (e)
+{
+    var container = $(".bl-main");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        $(".overlay").toggle();
+        $(".").slideUp();
+    }
+});
+
+*/
+		
+	</script>
+		
+		<script src="js/classie.js"></script>
+		<script src="js/navmenu.js"></script>
+		<script src="js/scrollto.js"></script>
+		<script src="js/fadein.js"></script>			
+		<script src="js/main.js"></script> 
+			
+		<script src="js/boxlayout.js"></script> <!-- modal window -->		
+		<script>
+			$(function() {
+				Boxlayout.init();
+			});
+		</script>
+		
+		<script src="js/appshowcase_3.js"></script>
+		<script>
+			$(function() {
+				AppShowcase.init();
+			});
+		</script>
+
+	
+</body>
+</html>
